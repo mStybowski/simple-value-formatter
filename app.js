@@ -23,13 +23,13 @@ const data = [
 
 const settings = {
     precision: 2,
-    suffix: "$"
+    suffix: "$43"
 }
 
 const prepareData = (datum) => {
     return {
         ...datum,
-        elo: 'exd'
+        elo: 'exdfd'
     }
 }
 

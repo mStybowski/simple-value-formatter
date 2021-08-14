@@ -12,25 +12,18 @@ const data = [
         productId: 4563
     },
     {
-        valueReal: 6.47,
+        valueReal: 6.448,
         productId: 4563
     },
     {
         valueReal: 7.6974,
-        productId: 4563
+        productId: 4564
     }
 ]
 
 const settings = {
     precision: 2,
     suffix: "$43"
-}
-
-const prepareData = (datum) => {
-    return {
-        ...datum,
-        elo: 'exdfd'
-    }
 }
 
 const pipe = (...functions) => args => functions.reduce((arg, fn) => fn(arg), args);

@@ -22,15 +22,8 @@ const data = [
 ]
 
 const settings = {
-    precision: 3,
+    precision: 2,
     suffix: "$"
-}
-
-const prepareData = (datum) => {
-    return {
-        ...datum,
-        elo: 'exd'
-    }
 }
 
 const pipe = (...functions) => args => functions.reduce((arg, fn) => fn(arg), args);

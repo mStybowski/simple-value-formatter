@@ -40,6 +40,7 @@ const getValueFormatter = (settings) => {
         const label = labelFormatter(el.valueReal)
         return {
             ...el,
+            
             label
         }
     }

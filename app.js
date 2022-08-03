@@ -34,13 +34,13 @@ const getValueFormatter = (settings) => {
     const addSuffix = (text) => text + suffix;
     const addPrefix = (text) => text + suffix;
     const toFixedPrecision = (value) => value.toFixed(precision);
-    
+    // meh
     const dataFormatter = (el) => {
         const labelFormatter = pipe(toFixedPrecision, addSuffix);
         const label = labelFormatter(el.valueReal)
-
         return {
             ...el,
+            
             label
         }
     }
